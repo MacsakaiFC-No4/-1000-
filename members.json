@@ -1,0 +1,28 @@
+{
+  "members": [
+    {
+      "name": "栗原",
+      "icon": "👔",
+      "money": 0,
+      "status": ""
+    },
+    {
+      "name": "ミアーノ",
+      "icon": "🦍",
+      "money": 0,
+      "status": ""
+    },
+    {
+      "name": "しょうろう",
+      "icon": "💪",
+      "money": 0,
+      "status": ""
+    },
+    {
+      "name": "ゆうた",
+      "icon": "📚",
+      "money": 0,
+      "status": "研究中..."
+    }
+  ]
+}
