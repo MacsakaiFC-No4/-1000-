@@ -197,24 +197,46 @@ fetch('achievements.json')
 .then(response => response.json())
 .then(data => {
 
+    const achievements = [
+        {
+            key: "gorilla",
+            title: "🏆 ゴリラ覚醒",
+            description: "ミアーノが真の力を解放した"
+        },
+        {
+            key: "bucho",
+            title: "🏆 部長昇進",
+            description: "難ありのまま権力だけが増した"
+        },
+        {
+            key: "bakidou",
+            title: "🏆 バキ童覚醒",
+            description: "賢者タイムを超越した"
+        },
+        {
+            key: "sotsuron",
+            title: "🏆 卒論提出",
+            description: "研究対象を大学生活から卒業論文へ変更した"
+        }
+    ];
+
+    const unlockedCount = achievements.filter(item => data[item.key]).length;
+
     let html = '';
 
-    html += `<p>発見数：${data.gorilla ? 1 : 0} / 20</p>`;
+    html += `<p>発見数：${unlockedCount} / 20</p>`;
     html += `<hr>`;
 
-    if(data.gorilla){
-        html += `
-        <h3>🏆 ゴリラ覚醒(ミアノオリジナル🦍)</h3>
-        <p>ミアーノが真の力を解放した</p>
-        `;
-    }else{
-        html += `<p>❓？？？？？</p>`;
-    }
-
-    html += `<p>❓？？？？？</p>`;
-    html += `<p>❓？？？？？</p>`;
-    html += `<p>❓？？？？？</p>`;
-    html += `<p>❓？？？？？</p>`;
+    achievements.forEach(item => {
+        if(data[item.key]){
+            html += `
+            <h3>${item.title}</h3>
+            <p>${item.description}</p>
+            `;
+        }else{
+            html += `<p>❓？？？？？</p>`;
+        }
+    });
 
     html += `
     <p style="color:#888;">
