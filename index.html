@@ -178,21 +178,9 @@ Lv.1
 
 <h2>🎁 隠し実績</h2>
 
-<p>
-発見数：？？？ / ？？？
-</p>
-
-<hr>
-
-<p>❓？？？？？</p>
-<p>❓？？？？？</p>
-<p>❓？？？？？</p>
-<p>❓？？？？？</p>
-<p>❓？？？？？</p>
-
-<p style="color:#888;">
-まだ発見されていない実績が存在します...
-</p>
+<div id="secretAchievements">
+<p>読み込み中...</p>
+</div>
 
 </div>
 
@@ -202,6 +190,42 @@ Lv.1
 ー千里(資産1000万)の道も一歩からー
 
 </footer>
+
+<script>
+
+fetch('achievements.json')
+.then(response => response.json())
+.then(data => {
+
+    let html = '';
+
+    if(data.gorilla){
+        html += `
+        <p>発見数：1 / 20</p>
+        <hr>
+        <h3>🏆 ゴリラ覚醒</h3>
+        <p>ミアーノが真の力を解放した</p>
+        `;
+    }else{
+        html += `
+        <p>発見数：？？？ / ？？？</p>
+        <hr>
+        <p>❓？？？？？</p>
+        <p>❓？？？？？</p>
+        <p>❓？？？？？</p>
+        <p>❓？？？？？</p>
+        <p>❓？？？？？</p>
+        <p style="color:#888;">
+        まだ発見されていない実績が存在します...
+        </p>
+        `;
+    }
+
+    document.getElementById("secretAchievements").innerHTML = html;
+
+});
+
+</script>
 
 </body>
 </html>
