@@ -4,21 +4,21 @@
       "name": "栗原",
       "icon": "👔",
       "runnerImage": "images/kurihara.gif",
-      "money": 0,
+      "money": 500000,
       "status": ""
     },
     {
       "name": "ミアーノ",
       "icon": "🦍",
       "runnerImage": "images/gorilla.svg",
-      "money": 0,
+      "money": 800000,
       "status": ""
     },
     {
       "name": "しょうろう",
       "icon": "💪",
       "runnerImage": "images/shoro.svg",
-      "money": 0,
+      "money": 300000,
       "status": ""
     },
     {
