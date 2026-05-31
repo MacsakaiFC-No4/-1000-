@@ -224,7 +224,7 @@ fetch('achievements.json')
 
     let html = '';
 
-    html += `<p>発見数：${unlockedCount} / 20</p>`;
+   html += `<p>発見数：${unlockedCount} / ${achievements.length}</p>`;
     html += `<hr>`;
 
     achievements.forEach(item => {
