@@ -17,14 +17,14 @@
     {
       "name": "しょうろう",
       "icon": "💪",
-      "runnerImage": "images/banana.svg",
+      "runnerImage": "images/bakidou.svg",
       "money": 0,
       "status": ""
     },
     {
       "name": "ゆうた",
       "icon": "📚",
-      "runnerImage": "images/sketchbook_02_front.svg",
+      "runnerImage": "images/yuta.svg",
       "money": 0,
       "status": "研究中..."
     }
