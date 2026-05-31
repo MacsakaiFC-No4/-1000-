@@ -307,7 +307,7 @@ fetch('achievements.json')
 </script>
 
 <script>
-fetch('members.json')
+fetch('members.json?v=' + Date.now())
 .then(response => response.json())
 .then(data => {
 
