@@ -297,6 +297,8 @@ fetch('members.json')
         const progressPercent = (member.money / goal) * 100;
         const safePercent = Math.min(progressPercent, 100);
 
+        const isKurihara = member.name === "栗原";
+
         html += `
         <div class="member">
         ${member.icon} <b>${member.name}</b><br>
@@ -305,7 +307,12 @@ fetch('members.json')
 
         <div class="road">
             <div class="road-progress" style="width:${safePercent}%;"></div>
-            <div class="runner" style="left:${safePercent}%;">🏃‍♂️</div>
+
+            <img
+                class="runner-img ${isKurihara ? 'kurihara' : ''}"
+                src="${member.runnerImage}"
+                alt="${member.name}"
+                style="left:${safePercent}%;">
         </div>
         </div>
         `;
@@ -316,6 +323,6 @@ fetch('members.json')
 });
 
 </script>
-
+    
 </body>
 </html>
