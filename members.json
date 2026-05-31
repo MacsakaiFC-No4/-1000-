@@ -3,24 +3,28 @@
     {
       "name": "栗原",
       "icon": "👔",
+      "runnerImage": "images/kurihara.gif",
       "money": 0,
       "status": ""
     },
     {
       "name": "ミアーノ",
       "icon": "🦍",
+      "runnerImage": "images/gorilla.svg",
       "money": 0,
       "status": ""
     },
     {
       "name": "しょうろう",
       "icon": "💪",
+      "runnerImage": "images/shoro.svg",
       "money": 0,
       "status": ""
     },
     {
       "name": "ゆうた",
       "icon": "📚",
+      "runnerImage": "images/yuta.svg",
       "money": 0,
       "status": "研究中..."
     }
