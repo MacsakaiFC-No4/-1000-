@@ -1,6 +1,6 @@
 {
   "gorilla": true,
-  "bucho": false,
-  "bakidou": false,
-  "sotsuron": false
+  "bucho": true,
+  "bakidou": true,
+  "sotsuron": true
 }
