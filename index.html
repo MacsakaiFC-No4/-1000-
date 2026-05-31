@@ -199,27 +199,28 @@ fetch('achievements.json')
 
     let html = '';
 
+    html += `<p>発見数：${data.gorilla ? 1 : 0} / 20</p>`;
+    html += `<hr>`;
+
     if(data.gorilla){
         html += `
-        <p>発見数：1 / 20</p>
-        <hr>
         <h3>🏆 ゴリラ覚醒</h3>
         <p>ミアーノが真の力を解放した</p>
         `;
     }else{
-        html += `
-        <p>発見数：？？？ / ？？？</p>
-        <hr>
-        <p>❓？？？？？</p>
-        <p>❓？？？？？</p>
-        <p>❓？？？？？</p>
-        <p>❓？？？？？</p>
-        <p>❓？？？？？</p>
-        <p style="color:#888;">
-        まだ発見されていない実績が存在します...
-        </p>
-        `;
+        html += `<p>❓？？？？？</p>`;
     }
+
+    html += `<p>❓？？？？？</p>`;
+    html += `<p>❓？？？？？</p>`;
+    html += `<p>❓？？？？？</p>`;
+    html += `<p>❓？？？？？</p>`;
+
+    html += `
+    <p style="color:#888;">
+    まだ発見されていない実績が存在します...
+    </p>
+    `;
 
     document.getElementById("secretAchievements").innerHTML = html;
 
