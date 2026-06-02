@@ -338,8 +338,9 @@ fetch('members.json?v=' + Date.now())
         html += `
         <div class="member">
         ${member.icon} <b>${member.name}</b><br>
-        軍資金：${member.money.toLocaleString()} 円<br>
-        進捗：${progressPercent.toFixed(1)}%
+軍資金：${member.money.toLocaleString()} 円<br>
+Lv.${member.exp}<br>
+進捗：${progressPercent.toFixed(1)}%
 
         <div class="road">
             <div class="road-progress" style="width:${safePercent}%;"></div>
