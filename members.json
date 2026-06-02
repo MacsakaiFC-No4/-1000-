@@ -5,6 +5,7 @@
       "icon": "👔",
       "runnerImage": "images/kurihara.gif",
       "money": 0,
+      "exp": 1,
       "status": ""
     },
     {
@@ -12,6 +13,7 @@
       "icon": "🦍",
       "runnerImage": "images/gorilla.svg",
       "money": 0,
+      "exp": 1,
       "status": ""
     },
     {
@@ -19,6 +21,7 @@
       "icon": "💪",
       "runnerImage": "images/shoro.svg",
       "money": 0,
+      "exp": 1,
       "status": ""
     },
     {
@@ -26,6 +29,7 @@
       "icon": "📚",
       "runnerImage": "images/yuta.svg",
       "money": 0,
+      "exp": 0,
       "status": "研究中..."
     }
   ]
